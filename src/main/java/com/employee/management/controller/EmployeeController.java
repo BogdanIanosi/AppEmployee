@@ -1,9 +1,11 @@
-package net.javaguides.springboot.controller;
+package com.employee.management.controller;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.employee.management.model.Employee;
+import com.employee.management.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,9 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.javaguides.springboot.exception.ResourceNotFoundException;
-import net.javaguides.springboot.model.Employee;
-import net.javaguides.springboot.repository.EmployeeRepository;
+import com.employee.management.exception.ResourceNotFoundException;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
